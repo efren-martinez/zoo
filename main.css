@@ -1,0 +1,59 @@
+* { margin: 0; padding: 0;}
+html { margin: 0; padding: 0;}
+body { min-width: 100%; min-height: 100%; margin: 0; padding:0; background-color:#0c1a03; font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;}
+header { background-image:url(http://efren-martinez.pro/App/zoo/images/header.png); background-size: contain; background-repeat: no-repeat; background-position: top center; text-align: center; min-height:120px; }
+nav { width: 100%; }
+/* mapa */
+.mapa-view { background-image: url(http://efren-martinez.pro/App/zoo/images/mapa-bg.jpg); background-size: contain; background-repeat: no-repeat; min-height:322px;}
+.mapa-view img { width: 100%; max-width: 680px;}
+.mapa a { color:#fff; border:solid 1px #f0f; padding:1% 10%; border-radius:6px; margin: 0 2.4%; text-decoration: none; }
+.mapa a.aves { border:solid 4px #03a9ff; background: linear-gradient(to bottom, #00aeff 0%,#0aedff 100%); margin-left: 0;}
+.mapa a.mamiferos { border:solid 4px #ff9205; background: linear-gradient(to bottom, #ffd00a 0%,#ff7900 100%);}
+.mapa a.reptiles { border:solid 4px #b6d102; background: linear-gradient(to bottom, #eaf704 0%,#a9cc00 100%); margin-right: 0;}
+section { width:100%; max-width:680px; clear: both; display:table; position: relative; margin: 0 auto; text-align: center; }
+/* animales */
+.animal-content { clear: both; display: table; color: #fff; text-align: left;}
+.animal-content img { float: left; width: 50%; position: relative; }
+.animal-content aside { padding:0 6px; position:relative; float:right; text-align:left; width:50%; text-align: justify; line-height:1.6;}
+.animal-content aside h1 { margin:0; font-size: 140%;}
+section aside { overflow-y:auto; height:320px;}
+section aside::-webkit-scrollbar { display: none; }
+section .info-imagen-inner { position:relative; float: left; }
+section .boton-multi {border:solid 6px #ff9205; background:linear-gradient(to bottom, #ffd00a 0%,#ff7900 100%); border-radius:6px; padding:6px 12px;  display:table; line-height:2; text-align:center; width:30%; margin-top:36px; }
+section .boton-multi input[type=checkbox] { }
+section .boton-multi img { max-width:30px; border:none; float: right;}
+.home-btn { background:#fff; padding:6% 12px; margin:12px; border-radius:6px; float:left; width:calc(100% - 50% - 68px); text-align:center; line-height:100%; color:#fff; font-size:200%;}
+@media (max-width: 720px) {
+.home-btn { font-size:140%;}
+.mapa a { padding:1% 2%;}
+}
+/* home */
+.home-btn a { color:#fff; text-decoration:none;}
+.one { border:solid 6px #ff9205; background: linear-gradient(to bottom, #ffd00a 0%,#ff7900 100%);}
+.two { border:solid 6px #b6d102; background: linear-gradient(to bottom, #eaf704 0%,#a9cc00 100%);}
+.three { border:solid 6px #03a9ff; background: linear-gradient(to bottom, #00aeff 0%,#0aedff 100%);}
+.four { border:solid 6px #613a87; background: linear-gradient(to bottom, #532581 0%,#b37dd6 100%);}
+/* multimedia */
+.videos { padding:2% 1%; }
+.videos img { border:solid 4px #fff; max-width:30%; opacity: 0.6; }
+.videos img:hover { opacity:1; }
+/* animales */
+.bkbtn { position: absolute; top:12px; left:10px;}
+.listado-animales { width:80%; margin:0 auto; position: relative; float: none;}
+.listado-animales li { background:#43521f; border:solid 6px #283410; border-radius:12px; margin:12px 0; width:100%; text-align: center;}
+.listado-animales li img { float:left; left:-16px; position: absolute; top:-16px;}
+.listado-animales li:hover { background: #b1c334;}
+.listado-animales li a, .listado-animales li a:hover{ color:#fff; background: transparent; border-color:#5f7013; font-size:160%;}
+/* Mas informacion animales */
+.animate-show { line-height:20px; opacity:1; padding:10px;
+}
+.animate-show.ng-hide-add,
+.animate-show.ng-hide-remove { display:block!important;
+}
+.animate-show.ng-hide-add.ng-hide-add-active,
+.animate-show.ng-hide-remove.ng-hide-remove-active { -webkit-transition:all linear 0.5s; transition:all linear 0.5s;
+}
+.animate-show.ng-hide { line-height:0;  opacity:0; padding:0 10px;
+}
+.check-element { padding:10px; text-align: justify;  overflow-y:auto; height:360px;
+}
